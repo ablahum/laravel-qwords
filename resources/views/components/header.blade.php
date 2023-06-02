@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="assets/logo.webp" alt="" class="w-50">
+      <img src="{{ asset('assets/logo.webp') }}" alt="logo" width="120">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
         </li>
       </ul>
 
-      <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-1 ms-3">Login</a>
+      <a href="#" class="btn btn-primary rounded-pill px-4 py-1 ms-3">Login</a>
     </div>
   </div>
 </nav>
