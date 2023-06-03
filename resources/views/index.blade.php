@@ -20,6 +20,8 @@
       @include('components.header')
       @include('components.hero')
       @include('components.domain')
+      @include('components.hosting')
+      @include('components.service')
     </div>
 
     {{-- bootstrap's css --}}

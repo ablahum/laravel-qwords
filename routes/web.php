@@ -18,5 +18,83 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('', function () {
-    return view('index');
+    $hosting_datas = [
+        [
+            "title" => "VCH1",
+            "spec" => "Value Cloud Hosting",
+            "price_before" => "24.500",
+            "price_after" => "14.500",
+            "desc" => [
+                "disk" => "3GB",
+                "bandwidth" => "Unlimited",
+                "cpu" => "0.5 Core",
+                "addon" => "No"
+            ]
+        ],
+        [
+            "title" => "Signature",
+            "spec" => "Unimited Hosting",
+            "price_before" => "109.000",
+            "price_after" => "89.900",
+            "desc" => [
+                "disk" => "Unlimited",
+                "bandwidth" => "Unlimited",
+                "cpu" => "1 Core",
+                "addon" => "5/5"
+            ]
+        ],
+        [
+            "title" => "HPCH Bisnis 1",
+            "spec" => "High Performance",
+            "price_before" => "90.000",
+            "price_after" => "79.000",
+            "desc" => [
+                "disk" => "3GB",
+                "bandwidth" => "Unlimited",
+                "cpu" => "1 Core",
+                "addon" => "No"
+            ]
+        ],
+        [
+            "title" => "VPS SC1",
+            "spec" => "Cloud VPS KVM SSD",
+            "price_before" => "135.000",
+            "price_after" => "75.000",
+            "desc" => [
+                "disk" => "3GB",
+                "bandwidth" => "Unlimited",
+                "cpu" => "1 Core",
+                "addon" => "Unlimited"
+            ]
+        ],
+    ];
+
+    $service_datas = [
+        [
+            "image" => "assets/ssl.webp",
+            "title" => "SSL",
+            "desc" => "Jadikan website Anda lebih terpercaya dan disukai oleh search engine dengan menggunakan SSL Certificate.",
+            "price" => "112.000",
+            "price_range" => "/ tahun"
+        ],
+        [
+            "image" => "assets/ssl.webp",
+            "title" => "Dedicated Server",
+            "desc" => "Nikmati kelola Dedicated Server sendiri dengan akses remote dari seluruh dunia tanpa batas.",
+            "price" => "449.000",
+            "price_range" => "/ bulan"
+        ],
+        [
+            "image" => "assets/disk.webp",
+            "title" => "Colocation Server",
+            "desc" => "Akses cepat dari seluruh dunia dengan fasilitas 24x7 full monitoring dengan cooling system terbaik serta fire extinguisher.",
+            "price" => "500.000",
+            "price_range" => "/ bulan"
+        ],
+    ];
+
+    return view('index', [
+        "hosting_datas" => $hosting_datas,
+        "service_datas" => $service_datas
+    ]);
 });
