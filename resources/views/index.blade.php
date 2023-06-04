@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
   </head>
 
   <body>
@@ -22,8 +28,8 @@
       @include('components.domain')
       @include('components.hosting')
       @include('components.service')
-      @include('components.solution')
       @include('components.guarantee')
+      @include('components.solution')
       @include('components.help')
       @include('components.footer')
     </div>

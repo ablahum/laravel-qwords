@@ -1,13 +1,13 @@
 <div class="py-5 container">
   <div class="text-center">
-    <h2>Cloud Hosting Indonesia <span class="text-danger">Diskon Hingga 50%</span></h2>
+    <h2 class="fw-bold">Cloud Hosting Indonesia <span style="color: #ff6d0b">Diskon Hingga 50%</span></h2>
 
     <p class="mb-0">Layanan cloud hosting indonesia terbaik dengan teknologi andal untuk website anda</p>
   </div>
 
-  <div class="d-flex mt-5">
+  <div class="d-flex justify-content-center mt-5 flex-wrap">
     @foreach ($hosting_datas as $data)
-    <div class="card shadow-lg mx-2" style="width: 18rem;">
+    <div class="card shadow-lg m-2" style="width: 18rem;">
       <div class="card-body">
         <p class="mb-2">{{ $data["spec"] }}</p>
         
@@ -15,7 +15,7 @@
 
         <s class="text-muted">Rp {{ $data["price_before"] }}</s>
         
-        <h4 class="fs-3 m-0 text-primary fw-bold">Rp {{ $data["price_after"] }}</h4>
+        <h4 class="fs-3 m-0 fw-bold" style="color: #ff6d0b;">Rp {{ $data["price_after"] }}</h4>
 
         <div class="my-4">      
           @foreach ($data["desc"] as $d)
@@ -31,7 +31,7 @@
           @endforeach
         </div>
         
-        <a href="#" class="btn btn-primary rounded-pill w-100">Pesan Sekarang</a>
+        <a href="#" class="btn text-light rounded-pill w-100" style="background-color: #ff6d0b;">Pesan Sekarang</a>
       </div>
     </div>
     @endforeach
