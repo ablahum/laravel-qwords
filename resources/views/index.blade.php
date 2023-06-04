@@ -16,12 +16,16 @@
   </head>
 
   <body>
-    <div class="container">
+    <div>
       @include('components.header')
       @include('components.hero')
       @include('components.domain')
       @include('components.hosting')
       @include('components.service')
+      @include('components.solution')
+      @include('components.guarantee')
+      @include('components.help')
+      @include('components.footer')
     </div>
 
     {{-- bootstrap's css --}}

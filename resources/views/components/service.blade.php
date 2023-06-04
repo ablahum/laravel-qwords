@@ -1,4 +1,4 @@
-<div class="py-5">
+<div class="py-5 container">
   <div class="text-center">
     <h2>Layanan Kami Yang Lain</h2>
 

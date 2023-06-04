@@ -93,8 +93,42 @@ Route::get('', function () {
         ],
     ];
 
+    $solution_datas = [
+        [
+            "title" => "Perusahaan",
+            "desc" => "Wujudkan website perusahaan profesional dan berkelas dengan dukungan web hosting terbaik dan fitur keamanan ekstra",
+            "image" => "assets/company.webp"
+        ],
+        [
+            "title" => "UMKM dan Toko Online",
+            "desc" => "Memberikan hosting terbaik untuk mendukung kebutuhan website pemasaran barang/jasa secara online",
+            "image" => "assets/umkm.webp"
+        ],
+        [
+            "title" => "Organisasi dan Komunitas",
+            "desc" => "Bikin website organisasi atau komunitas Anda dengan paket hosting unggulan yang ramah kantong.            ",
+            "image" => "assets/orgs.webp"
+        ],
+        [
+            "title" => "Sekolah",
+            "desc" => "Infrastruktur web hosting terbaik untuk menunjang kegiatan e-learning. Didukung platform MOODLE khusus pembelajaran daring",
+            "image" => "assets/school.webp"
+        ],
+        [
+            "title" => "Developer",
+            "desc" => "Tersedia paket hosting Indonesia dengan spesifikasi khusus yang dev-friendly. Ekstra NodeJS dan Git Version Control",
+            "image" => "assets/dev.webp"
+        ],
+        [
+            "title" => "Blogger dan Personal",
+            "desc" => "Memfasilitasi blogger dengan infrastruktur hosting Indonesia terbaik serta template website premium untuk tampil lebih profesional            ",
+            "image" => "assets/blog.webp"
+        ],
+    ];
+
     return view('index', [
         "hosting_datas" => $hosting_datas,
-        "service_datas" => $service_datas
+        "service_datas" => $service_datas,
+        "solution_datas" => $solution_datas
     ]);
 });

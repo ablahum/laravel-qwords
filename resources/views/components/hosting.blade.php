@@ -1,4 +1,4 @@
-<div class="py-5">
+<div class="py-5 container">
   <div class="text-center">
     <h2>Cloud Hosting Indonesia <span class="text-danger">Diskon Hingga 50%</span></h2>
 

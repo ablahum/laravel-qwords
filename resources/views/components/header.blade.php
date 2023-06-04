@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="container navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('assets/logo.webp') }}" alt="logo" width="120">
